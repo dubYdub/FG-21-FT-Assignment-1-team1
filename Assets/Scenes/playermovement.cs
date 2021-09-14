@@ -12,6 +12,7 @@ public class playermovement : MonoBehaviour
 
     Vector2 movement;
     Vector2 mousePos;
+    internal static Vector3 position;
 
     // Update is called once per frame
     void Update()

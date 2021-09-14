@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{50ECD2D7-FB4C-942A-8F14-3622A18E169F}</ProjectGuid>
+    <ProjectGuid>{5114B529-6696-9730-0A4D-A38A10B8F327}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -60,6 +60,11 @@
     <Compile Include="Assets\Scenes\playermovement.cs" />
     <Compile Include="Assets\bulletscript.cs" />
     <Compile Include="Assets\new_bulletscript.cs" />
+    <Compile Include="Assets\enemyfollow.cs" />
+    <Compile Include="Assets\followingscript.cs" />
+    <Compile Include="Assets\newfollowscript.cs" />
+    <Compile Include="Assets\enemyhealth.cs" />
+    <Compile Include="Assets\healthcollider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\space_shooter_pack\space_shooter_pack\license.txt" />
@@ -269,6 +274,9 @@
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -278,8 +286,8 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
@@ -632,16 +640,20 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{D9745EE9-1893-88C4-9588-D643CE4969A2}</Project>
+      <Project>{426E9D59-D027-CB90-03E0-0671E2DE3C4F}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{D163FACF-160C-3208-14F7-103496243C79}</Project>
+      <Project>{B12C3330-7D70-FB1C-3F95-04358CCBD53C}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{7BD412C0-D303-7526-BA4C-D151B9720B94}</Project>
+      <Project>{30C7CCFB-E6C5-821E-A078-E22307C178AB}</Project>
       <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{6B73F99C-A73D-2AA5-F3A2-55AB0E903F13}</Project>
+      <Name>Cinemachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

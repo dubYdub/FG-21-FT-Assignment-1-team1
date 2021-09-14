@@ -12,8 +12,20 @@ public class bulletscript : MonoBehaviour
         Destroy(gameObject);
         Destroy(gameObject, 2f);
 
-
+        var enemy = collision.collider.GetComponent<enemyhealth>();
+        if (enemy)
+        {
+            enemy.TakeHit(1);
         }
+
+        Destroy(gameObject);
+
+
+
+
+    }
+
+ 
     }
 
 

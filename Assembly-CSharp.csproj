@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CE488D93-727F-01BE-BC7C-FC85FAEF105A}</ProjectGuid>
+    <ProjectGuid>{91069178-6D39-7646-F7E4-9C843EE9C9DE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -60,6 +60,11 @@
     <Compile Include="Assets\Scenes\playermovement.cs" />
     <Compile Include="Assets\bulletscript.cs" />
     <Compile Include="Assets\new_bulletscript.cs" />
+    <Compile Include="Assets\enemyfollow.cs" />
+    <Compile Include="Assets\followingscript.cs" />
+    <Compile Include="Assets\newfollowscript.cs" />
+    <Compile Include="Assets\enemyhealth.cs" />
+    <Compile Include="Assets\healthcollider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\space_shooter_pack\space_shooter_pack\license.txt" />
@@ -638,44 +643,52 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{B67F8C96-0C3A-7882-3CA4-F6C2529914F7}</Project>
+      <Project>{6EB3A9AB-EF89-063E-C969-97F75707B354}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{420E60D1-4F9F-2FE0-3DC5-064D1DE71326}</Project>
+      <Project>{0733E870-DF84-2A16-B693-408854C8C068}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{330AC3B0-E902-B16C-7EE2-1841DE8CF56F}</Project>
+      <Project>{C12BCCDD-15B5-964C-4493-40CFF0FDB48F}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.Editor.csproj">
+      <Project>{0CB46DBA-2583-7767-D178-25421FE9DC54}</Project>
+      <Name>Unity.Timeline.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{D9745EE9-1893-88C4-9588-D643CE4969A2}</Project>
+      <Project>{426E9D59-D027-CB90-03E0-0671E2DE3C4F}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{D163FACF-160C-3208-14F7-103496243C79}</Project>
+      <Project>{B12C3330-7D70-FB1C-3F95-04358CCBD53C}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{66936389-C3E6-8027-521F-B8A95CFBDE34}</Project>
+      <Project>{DF48B43B-D199-3FF2-288A-DBEA2AC131C2}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{86405471-6209-89D2-EC14-9AD8AF70DD40}</Project>
+      <Project>{DD5F6D63-1287-CD79-B175-AD23FECA760A}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{ADAB9EC8-0957-BB35-EF35-A2475543752E}</Project>
+      <Project>{EDC95DA2-F7C1-7C13-6957-4C23C7175B03}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{7BD412C0-D303-7526-BA4C-D151B9720B94}</Project>
+      <Project>{30C7CCFB-E6C5-821E-A078-E22307C178AB}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{DD7C9330-D31D-852F-F9E8-8C93EFAB291F}</Project>
-      <Name>Unity.Timeline.Editor</Name>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{7F4C9D51-D5ED-F327-D2CE-3E252DEB5C00}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{6B73F99C-A73D-2AA5-F3A2-55AB0E903F13}</Project>
+      <Name>Cinemachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
