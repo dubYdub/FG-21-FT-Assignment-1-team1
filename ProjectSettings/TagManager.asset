@@ -41,9 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: BG
-    uniqueID: 2596281235
+  - name: bg
+    uniqueID: 3443881735
     locked: 0
-  - name: Game object
-    uniqueID: 3462108601
+  - name: gameobject
+    uniqueID: 325117499
     locked: 0
