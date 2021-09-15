@@ -8,7 +8,7 @@ public class bulletscript : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     { 
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(effect, 0.7f);
+        Destroy(effect, 0.4f);
         Destroy(gameObject);
         Destroy(gameObject, 2f);
 
