@@ -486,6 +486,7 @@ GameObject:
   - component: {fileID: 823683219}
   - component: {fileID: 823683223}
   - component: {fileID: 823683224}
+  - component: {fileID: 823683225}
   m_Layer: 0
   m_Name: ship_2
   m_TagString: Player
@@ -622,6 +623,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 362ba338ae9cf7b4e9a1d450b1be12c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &823683225
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823683218}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9c48bdbeea61a8444880eced39fcc074, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1088173992
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,6 +866,7 @@ GameObject:
   - component: {fileID: 1774436602}
   - component: {fileID: 1774436598}
   - component: {fileID: 1774436603}
+  - component: {fileID: 1774436604}
   m_Layer: 0
   m_Name: enemy-big_0
   m_TagString: Untagged
@@ -992,3 +1013,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hitpoints: 1
   MaxHitpoints: 5
+--- !u!95 &1774436604
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774436597}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2e1afe6cb7e5556448b0ab5b64dc275f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
