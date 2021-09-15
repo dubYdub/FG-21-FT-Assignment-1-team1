@@ -6,27 +6,27 @@ using UnityEngine;
 public class enemyhealth : MonoBehaviour
 {
 
-    public float Hitpoints;
-    public float MaxHitpoints = 5;
+    public float enemyHealth;
+    public float maxHealth = 5;
    
-
     void Start()
     {
-        Hitpoints = MaxHitpoints;
+        enemyHealth = maxHealth;
     }
 
     public void TakeHit(float damage)
     {
-        Hitpoints -= damage;
-        if (Hitpoints <= 0)
+        enemyHealth -= damage;
+
+        if (enemyHealth <= 0)
         {
             Destroy(gameObject);
+            ReduceEnemyNum();
         }
     }
 
-
-           
-       
-    
-
-  }
+    private void ReduceEnemyNum()
+    {
+        GameObject.Find("enemyspawner").GetComponent<enemyspawner>().enemyNumber --;
+    }
+}

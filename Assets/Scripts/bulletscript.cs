@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class bulletscript : MonoBehaviour
 {
+    public int bulletDamage = 1;
     public GameObject hitEffect;
     void OnCollisionEnter2D(Collision2D collision)
     { 
@@ -15,7 +16,7 @@ public class bulletscript : MonoBehaviour
         var enemy = collision.collider.GetComponent<enemyhealth>();
         if (enemy)
         {
-            enemy.TakeHit(1);
+            enemy.TakeHit(bulletDamage);
         }
 
         Destroy(gameObject);
