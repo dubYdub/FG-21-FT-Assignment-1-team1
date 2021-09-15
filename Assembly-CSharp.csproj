@@ -53,21 +53,21 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\rotationscript.cs" />
-    <Compile Include="Assets\Shootingscript.cs" />
-    <Compile Include="Assets\enemy_ai.cs" />
-    <Compile Include="Assets\bullet_destroy.cs" />
+    <Compile Include="Assets\Scripts\rotationscript.cs" />
+    <Compile Include="Assets\Scripts\Shootingscript.cs" />
+    <Compile Include="Assets\Scripts\enemyhealth.cs" />
+    <Compile Include="Assets\Scripts\enemy_ai.cs" />
+    <Compile Include="Assets\Scripts\followingscript.cs" />
+    <Compile Include="Assets\Scripts\bullet_destroy.cs" />
     <Compile Include="Assets\Scenes\playermovement.cs" />
-    <Compile Include="Assets\bulletscript.cs" />
-    <Compile Include="Assets\new_bulletscript.cs" />
-    <Compile Include="Assets\enemyfollow.cs" />
-    <Compile Include="Assets\followingscript.cs" />
-    <Compile Include="Assets\newfollowscript.cs" />
-    <Compile Include="Assets\enemyhealth.cs" />
-    <Compile Include="Assets\healthcollider.cs" />
+    <Compile Include="Assets\Scripts\enemyfollow.cs" />
+    <Compile Include="Assets\Scripts\bulletscript.cs" />
+    <Compile Include="Assets\Scripts\newfollowscript.cs" />
+    <Compile Include="Assets\Scripts\healthcollider.cs" />
+    <Compile Include="Assets\Scripts\new_bulletscript.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\space_shooter_pack\space_shooter_pack\license.txt" />
+    <None Include="Assets\Textures\space_shooter_pack\space_shooter_pack\license.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -640,56 +640,44 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{6EB3A9AB-EF89-063E-C969-97F75707B354}</Project>
-      <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{0733E870-DF84-2A16-B693-408854C8C068}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{C12BCCDD-15B5-964C-4493-40CFF0FDB48F}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{0CB46DBA-2583-7767-D178-25421FE9DC54}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{426E9D59-D027-CB90-03E0-0671E2DE3C4F}</Project>
-      <Name>Unity.Timeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{B12C3330-7D70-FB1C-3F95-04358CCBD53C}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{DF48B43B-D199-3FF2-288A-DBEA2AC131C2}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{DD5F6D63-1287-CD79-B175-AD23FECA760A}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{EDC95DA2-F7C1-7C13-6957-4C23C7175B03}</Project>
-      <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{30C7CCFB-E6C5-821E-A078-E22307C178AB}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
-      <Project>{7F4C9D51-D5ED-F327-D2CE-3E252DEB5C00}</Project>
-      <Name>com.unity.cinemachine.editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Cinemachine.csproj">
-      <Project>{6B73F99C-A73D-2AA5-F3A2-55AB0E903F13}</Project>
-      <Name>Cinemachine</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
