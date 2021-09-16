@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playermovement : MonoBehaviour
 {
@@ -14,11 +15,14 @@ public class playermovement : MonoBehaviour
     Vector2 movement;
     Vector2 mousePos;
     internal static Vector3 position;
+    private int healthValue;
+    private int attackValue;
+    private int killedValue;
 
     private void Start()
     {
-        gameOverText.SetActive(false);
-        restartButton.SetActive(false);
+        //gameOverText.SetActive(false);
+        //restartButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -28,6 +32,16 @@ public class playermovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         mousePos = playercam.ScreenToWorldPoint(Input.mousePosition);
+
+        healthValue = int.Parse(GameObject.Find("HealthValue").GetComponent<UnityEngine.UI.Text>().text);
+        attackValue = int.Parse(GameObject.Find("AttackValue").GetComponent<UnityEngine.UI.Text>().text);
+        killedValue = int.Parse(GameObject.Find("KilledAccountValue").GetComponent<UnityEngine.UI.Text>().text);
+        
+        if (healthValue <= 0)
+        {
+            
+            
+        }
 
     }
     void FixedUpdate()
@@ -41,14 +55,15 @@ public class playermovement : MonoBehaviour
         
 
     }
-
-    private void onCollisionEnter2D(Collision2D col)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (col.gameObject.tag.Equals("Enemy"))
+        if (collision.gameObject.tag == "Enemy")
         {
-            gameOverText.SetActive(true);
-            restartButton.SetActive(true);
-            gameObject.SetActive(false);
+            GameObject healthValue = GameObject.Find("HealthValue");
+            int healthValueNum = int.Parse(healthValue.GetComponent<UnityEngine.UI.Text>().text.ToString());
+            healthValueNum -= 2;
+            healthValue.GetComponent<UnityEngine.UI.Text>().text = healthValueNum.ToString();
         }
     }
+
 }

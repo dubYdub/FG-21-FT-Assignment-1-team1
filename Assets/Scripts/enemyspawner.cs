@@ -26,9 +26,14 @@ public class enemyspawner : MonoBehaviour
         if (Time.time > nextSpawn && enemyNumber < maxEnemyNumber)
         {
             nextSpawn = Time.time + spawnRate;
-            randX = Random.Range(-20f, 20f);
+
+            GameObject player = GameObject.Find("ship_2");
+           
+            randX = 0f;
             wheretospawn = new Vector2(randX, transform.position.y);
+
             Instantiate(enemy, wheretospawn, Quaternion.identity);
+
             enemyNumber = enemyNumber + 1; 
         }
     }

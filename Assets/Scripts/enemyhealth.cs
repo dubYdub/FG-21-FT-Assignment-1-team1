@@ -25,8 +25,15 @@ public class enemyhealth : MonoBehaviour
         }
     }
 
+
+
     private void ReduceEnemyNum()
     {
         GameObject.Find("enemyspawner").GetComponent<enemyspawner>().enemyNumber --;
+
+        GameObject killedAccount = GameObject.Find("KilledAccountValue");
+        int killedAccountNum = int.Parse(killedAccount.GetComponent<UnityEngine.UI.Text>().text.ToString());
+        killedAccountNum += 1;
+        killedAccount.GetComponent<UnityEngine.UI.Text>().text = killedAccountNum.ToString();
     }
 }
