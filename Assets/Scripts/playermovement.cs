@@ -39,7 +39,7 @@ public class playermovement : MonoBehaviour
         
         if (healthValue <= 0)
         {
-            
+            SceneManager.LoadScene("Endpage");
             
         }
 
