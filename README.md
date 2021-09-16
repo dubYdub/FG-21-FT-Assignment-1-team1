@@ -22,14 +22,15 @@
 - Animation System - animated ships (i.e. idle, shooting, and so forth) - OPTIONAL - (To Get VG)
 - Physics system - colliders and collision boxes need to be used - OPTIONAL - (To Get VG)
 - Camera Follow System - MANDATORY - (To Get G)
+- Particle FX - OPTIONAL - (To Get VG)
+- Enemy script spawning system - controlling how enemy ships spawn - MANDATORY - (To Get G)
+- Sound and SFX - OPTIONAL - (To Get VG)
 
 ### 💀 Unfinished 
 
-- Enemy script spawning system - controlling how enemy ships spawn - MANDATORY - (To Get G)
+
 - Checkpoints - (To Get G)
 - Naming convention - All code and assets need to maintain a consistent naming convention - MANDATORY - (To Get G)
-- Particle FX - OPTIONAL - (To Get VG)
-- Sound and SFX - OPTIONAL - (To Get VG)
 
 <br>
 
