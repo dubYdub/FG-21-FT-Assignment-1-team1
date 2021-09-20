@@ -188,7 +188,7 @@ MonoBehaviour:
   pointoffire: {fileID: 608694896388152766}
   bulletprefab: {fileID: 8153871755503258030, guid: 20276bc8f5acc27468694ec517cd24ae, type: 3}
   coolDown: 0.3
-  bulletForce: 20
+  bulletForce: 7
 --- !u!114 &608694897910983220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 0
-  maxHealth: 5
+  maxHealth: 7
 --- !u!61 &608694897910983219
 BoxCollider2D:
   m_ObjectHideFlags: 0
