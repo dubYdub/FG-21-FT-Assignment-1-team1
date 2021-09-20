@@ -74,7 +74,6 @@ GameObject:
   - component: {fileID: 6752141772706400675}
   - component: {fileID: 6752141772706400676}
   - component: {fileID: 6752141772706400672}
-  - component: {fileID: 6752141772706400687}
   - component: {fileID: 6752141772706400686}
   m_Layer: 0
   m_Name: ship_2
@@ -164,6 +163,8 @@ MonoBehaviour:
   moveSpeed: 5
   rb: {fileID: 6752141772706400676}
   playercam: {fileID: 0}
+  gameOverText: {fileID: 0}
+  restartButton: {fileID: 0}
 --- !u!50 &6752141772706400676
 Rigidbody2D:
   serializedVersion: 4
@@ -200,18 +201,6 @@ MonoBehaviour:
   pointoffire: {fileID: 6752141771219254619}
   bulletprefab: {fileID: 8153871755503258030, guid: 20276bc8f5acc27468694ec517cd24ae, type: 3}
   bulletForce: 30
---- !u!114 &6752141772706400687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6752141772706400677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 362ba338ae9cf7b4e9a1d450b1be12c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &6752141772706400686
 Animator:
   serializedVersion: 3

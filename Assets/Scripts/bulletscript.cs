@@ -21,11 +21,7 @@ public class bulletscript : MonoBehaviour
 
         Destroy(gameObject);
 
-
-
-
     }
-
  
     }
 
