@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeScene1 : MonoBehaviour
+public class ChangeScene2 : MonoBehaviour
 {
     private int healthValue;
     private int killedValue;
@@ -13,12 +13,13 @@ public class ChangeScene1 : MonoBehaviour
 
     void Update()
     {
-
-
+        
+       
         healthValue = int.Parse(GameObject.Find("HealthValue").GetComponent<UnityEngine.UI.Text>().text);
         killedValue = int.Parse(GameObject.Find("KilledAccountValue").GetComponent<UnityEngine.UI.Text>().text);
 
-
+       
+        
         if (healthValue <= 0)
         {
             SceneManager.LoadScene("Endpage");
@@ -27,8 +28,8 @@ public class ChangeScene1 : MonoBehaviour
 
         if (killedValue == maxKilledNumber)
         {
-            SceneManager.LoadScene("level_2");
-            LevelMsg.currentLevel = 2;
+            SceneManager.LoadScene("level_3");
+            LevelMsg.currentLevel = 3;
 
         }
 

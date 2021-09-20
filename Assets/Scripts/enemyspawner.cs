@@ -29,7 +29,7 @@ public class enemyspawner : MonoBehaviour
 
             GameObject player = GameObject.Find("ship_2");
            
-            randX = 0f;
+            randX = Random.Range (20f, 20f);
             wheretospawn = new Vector2(randX, transform.position.y);
 
             Instantiate(enemy, wheretospawn, Quaternion.identity);

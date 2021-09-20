@@ -6201,7 +6201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea11b92918447c14d8ca926d66a06ccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxKilledNumber: 3
+  maxKilledNumber: 30
 --- !u!1 &1248586661
 GameObject:
   m_ObjectHideFlags: 0
@@ -6232,9 +6232,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 4111526128581972457, guid: cbd521410615e5b449a7afa08eb48775, type: 3}
-  spawnRate: 2
+  spawnRate: 1
   enemyNumber: 0
-  maxEnemyNumber: 5
+  maxEnemyNumber: 10
 --- !u!4 &1248586663
 Transform:
   m_ObjectHideFlags: 0

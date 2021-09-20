@@ -5,8 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public void LoadScene(string sceneName)
+    public void LoadScene()
     {
-        SceneManager.LoadScene(sceneName);
+        if(LevelMsg.currentLevel == 1)
+        {
+            SceneManager.LoadScene("SampleScene");
+
+        }
+        else if (LevelMsg.currentLevel == 2) {
+            SceneManager.LoadScene("level_2");
+        }
+
+        else if (LevelMsg.currentLevel == 3)
+        {
+            SceneManager.LoadScene("level_3");
+        }
+        
     }
 }
