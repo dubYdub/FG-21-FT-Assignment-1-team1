@@ -7923,10 +7923,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2105765251}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 871013a43f01f4b499784281b233e992, type: 3}
+  m_Script: {fileID: 11500000, guid: fd5aa12785414b64eb904c72f50d78eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxKilledNumber: 15
+  maxKilledNumber: 3
 --- !u!114 &2105765253
 MonoBehaviour:
   m_ObjectHideFlags: 0

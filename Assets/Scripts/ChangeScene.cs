@@ -20,6 +20,10 @@ public class ChangeScene : MonoBehaviour
         {
             SceneManager.LoadScene("level_3");
         }
+        else if (LevelMsg.currentLevel == 4)
+        {
+            SceneManager.LoadScene("level_4");
+        }
         
     }
 }
