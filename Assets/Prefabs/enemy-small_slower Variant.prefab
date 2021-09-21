@@ -9,15 +9,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 608694897910983221, guid: d8c37a75a1d7a9444bcbcbfcfdee655c, type: 3}
       propertyPath: coolDown
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 608694897910983221, guid: d8c37a75a1d7a9444bcbcbfcfdee655c, type: 3}
       propertyPath: bulletForce
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 608694897910983229, guid: d8c37a75a1d7a9444bcbcbfcfdee655c, type: 3}
       propertyPath: m_Name
-      value: enemy-small_slower
+      value: enemy-small_slower Variant
       objectReference: {fileID: 0}
     - target: {fileID: 608694897910983231, guid: d8c37a75a1d7a9444bcbcbfcfdee655c, type: 3}
       propertyPath: m_RootOrder

@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointoffire: {fileID: 608694896388152766}
   bulletprefab: {fileID: 8153871755503258030, guid: 20276bc8f5acc27468694ec517cd24ae, type: 3}
-  coolDown: 0.3
+  coolDown: 0.45
   bulletForce: 7
 --- !u!114 &608694897910983220
 MonoBehaviour:

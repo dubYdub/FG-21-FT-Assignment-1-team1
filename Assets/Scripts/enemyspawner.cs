@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class enemyspawner : MonoBehaviour
 {
-    public GameObject enemy;
+    public GameObject shootingEnemy;
+    public GameObject stupidEnemy;
     float randX;
 
     Vector2 wheretospawn;
@@ -12,6 +13,7 @@ public class enemyspawner : MonoBehaviour
     float nextSpawn = 0.0f;
     public int enemyNumber = 0;
     public int maxEnemyNumber = 4;
+    public float shootingEnemyratio = 0f;
 
 
 
@@ -32,7 +34,17 @@ public class enemyspawner : MonoBehaviour
             randX = Random.Range (20f, 20f);
             wheretospawn = new Vector2(randX, transform.position.y);
 
-            Instantiate(enemy, wheretospawn, Quaternion.identity);
+            float seed = Random.Range(0f, 1.0f);
+
+            if (seed > shootingEnemyratio)
+            {
+                Instantiate(stupidEnemy, wheretospawn, Quaternion.identity);
+            }
+            else
+            {
+                Instantiate(shootingEnemy, wheretospawn, Quaternion.identity);
+            }
+
 
             enemyNumber = enemyNumber + 1; 
         }

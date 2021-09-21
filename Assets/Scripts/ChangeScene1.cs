@@ -27,7 +27,7 @@ public class ChangeScene1 : MonoBehaviour
 
         if (killedValue == maxKilledNumber)
         {
-            SceneManager.LoadScene("level_2");
+            SceneManager.LoadScene("level_transition");
             LevelMsg.currentLevel = 2;
 
         }

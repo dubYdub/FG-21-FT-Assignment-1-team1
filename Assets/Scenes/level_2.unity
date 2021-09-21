@@ -6788,10 +6788,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95d98df5541c54d458845ca5985f8790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 608694897910983229, guid: d8c37a75a1d7a9444bcbcbfcfdee655c, type: 3}
-  spawnRate: 4
+  shootingEnemy: {fileID: 608694897910983229, guid: d8c37a75a1d7a9444bcbcbfcfdee655c, type: 3}
+  stupidEnemy: {fileID: 4111526128581972457, guid: cbd521410615e5b449a7afa08eb48775, type: 3}
+  spawnRate: 2
   enemyNumber: 0
   maxEnemyNumber: 2
+  shootingEnemyratio: 1
 --- !u!4 &1544114129
 Transform:
   m_ObjectHideFlags: 0

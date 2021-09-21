@@ -20,6 +20,10 @@ public class enemyhealth : MonoBehaviour
 
         if (enemyHealth <= 0)
         {
+            if (gameObject.tag == "boss")
+            {
+                LevelMsg.isBossAlive = 0;
+            }
             Destroy(gameObject);
             ReduceEnemyNum();
         }

@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level_3.unity
     guid: 33c35fde9111f2447abf387dca0a49d5
+  - enabled: 1
+    path: Assets/Scenes/Level_transition.unity
+    guid: 5785d3ebfeb2a8745ad0848b744075ad
+  - enabled: 1
+    path: Assets/Scenes/Level_transition1.unity
+    guid: 6dbaa64ae16dcce4788685ca9bbea8a0
+  - enabled: 1
+    path: Assets/Scenes/level_credits.unity
+    guid: a34e3caa4354d974c803731717bcc147
   m_configObjects: {}

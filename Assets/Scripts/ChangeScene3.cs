@@ -24,10 +24,11 @@ public class ChangeScene3 : MonoBehaviour
             SceneManager.LoadScene("Endpage");
 
         }
+        Debug.Log(LevelMsg.isBossAlive);
 
-        if (killedValue == maxKilledNumber)
+        if (LevelMsg.isBossAlive == 0)
         {
-            SceneManager.LoadScene("level_3");
+            SceneManager.LoadScene("level_credits");
             LevelMsg.currentLevel = 3;
 
         }
