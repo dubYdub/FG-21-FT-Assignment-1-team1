@@ -7367,7 +7367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbf37c5d48d9a444aaa620bac503ef64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxKilledNumber: 1
+  maxKilledNumber: 15
 --- !u!1 &1791392094
 GameObject:
   m_ObjectHideFlags: 0

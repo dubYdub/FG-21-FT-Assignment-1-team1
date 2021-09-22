@@ -663,7 +663,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Limp Sausage
+  m_Text: 'Space Panic
 
 '
 --- !u!222 &805753910
@@ -877,7 +877,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RULE
+  m_Text: RULES
 --- !u!222 &1206866765
 CanvasRenderer:
   m_ObjectHideFlags: 0

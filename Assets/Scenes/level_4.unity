@@ -1093,6 +1093,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &646117100 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8122450195727898839, guid: f6f00c1b66499ad4ea9e6acdbca3dcec, type: 3}
+  m_PrefabInstance: {fileID: 8703832604581650191}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &646117103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646117100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97bb723f152088d4e9564693af2aa55b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 0
+  maxHealth: 100
 --- !u!1 &659010858
 GameObject:
   m_ObjectHideFlags: 0
@@ -8100,7 +8119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8122450195727898846, guid: f6f00c1b66499ad4ea9e6acdbca3dcec, type: 3}
       propertyPath: maxHealth
-      value: 2
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8122450195727898847, guid: f6f00c1b66499ad4ea9e6acdbca3dcec, type: 3}
       propertyPath: bulletForce
@@ -8114,5 +8133,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.695
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8122450195727898846, guid: f6f00c1b66499ad4ea9e6acdbca3dcec, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f6f00c1b66499ad4ea9e6acdbca3dcec, type: 3}
