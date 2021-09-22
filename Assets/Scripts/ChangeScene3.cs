@@ -29,7 +29,7 @@ public class ChangeScene3 : MonoBehaviour
         if (LevelMsg.isBossAlive == 0)
         {
             SceneManager.LoadScene("level_credits");
-            LevelMsg.currentLevel = 3;
+            LevelMsg.currentLevel = 4;
 
         }
 

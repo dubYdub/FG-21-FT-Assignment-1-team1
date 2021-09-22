@@ -2,12 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class enemyhealth : MonoBehaviour
 {
 
     public float enemyHealth;
     public float maxHealth = 5;
+    private Image healthBar;
    
     void Start()
     {
@@ -17,6 +20,13 @@ public class enemyhealth : MonoBehaviour
     public void TakeHit(float damage)
     {
         enemyHealth -= damage;
+
+
+        if (gameObject.tag == "boss")
+        {
+            healthBar = GameObject.Find("Blood").GetComponent<Image>();
+            healthBar.fillAmount = enemyHealth / maxHealth;
+        }
 
         if (enemyHealth <= 0)
         {

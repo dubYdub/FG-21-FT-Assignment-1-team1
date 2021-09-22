@@ -1,7 +1,6 @@
 # FG-21-FT-Assignment-1-team18
 
 
-### test test test for pulllllllllllll
 
 > This repository is used to develop a 2D top-down shooting game for the course assignment of FG21GD-FT Scripting and Unity
 
@@ -26,8 +25,6 @@
 - Enemy script spawning system - controlling how enemy ships spawn - MANDATORY - (To Get G)
 - Sound and SFX - OPTIONAL - (To Get VG)
 
-### 💀 Unfinished 
-
 
 - Checkpoints - (To Get G)
 - Naming convention - All code and assets need to maintain a consistent naming convention - MANDATORY - (To Get G)
@@ -41,5 +38,4 @@ balabala
 
 ### Audio
 balabala
-
 
