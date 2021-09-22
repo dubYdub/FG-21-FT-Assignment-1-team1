@@ -9,7 +9,7 @@ public class ChangeScene : MonoBehaviour
     {
         if(LevelMsg.currentLevel == 1)
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("level_1");
 
         }
         else if (LevelMsg.currentLevel == 2) {

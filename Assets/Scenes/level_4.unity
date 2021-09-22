@@ -8100,7 +8100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8122450195727898846, guid: f6f00c1b66499ad4ea9e6acdbca3dcec, type: 3}
       propertyPath: maxHealth
-      value: 100
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8122450195727898847, guid: f6f00c1b66499ad4ea9e6acdbca3dcec, type: 3}
       propertyPath: bulletForce
