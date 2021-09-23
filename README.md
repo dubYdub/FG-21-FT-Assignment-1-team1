@@ -29,6 +29,16 @@
 - Checkpoints - (To Get G)
 - Naming convention - All code and assets need to maintain a consistent naming convention - MANDATORY - (To Get G)
 
+
+
+## Final goals
+
+- Balance the game
+- Add the animation of enemy's death (big bullet explosion)
+- Add sound when the player got hit
+- The freedom of backing to main page at any time point
+- Naming convention.
+
 <br>
 
 ## Resources
