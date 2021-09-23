@@ -11,7 +11,8 @@ public class enemyhealth : MonoBehaviour
     public float enemyHealth;
     public float maxHealth = 5;
     private Image healthBar;
-   
+    public GameObject hitEffect;
+
     void Start()
     {
         enemyHealth = maxHealth;
@@ -35,6 +36,8 @@ public class enemyhealth : MonoBehaviour
                 LevelMsg.isBossAlive = 0;
             }
             Destroy(gameObject);
+            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 0.4f);
             ReduceEnemyNum();
         }
     }

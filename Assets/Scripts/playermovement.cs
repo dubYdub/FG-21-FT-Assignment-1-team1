@@ -11,6 +11,7 @@ public class playermovement : MonoBehaviour
     public Rigidbody2D rb;
     public Camera playercam;
     public GameObject gameOverText, restartButton;
+    public GameObject takedamageEffect;
 
     Vector2 movement;
     Vector2 mousePos;
@@ -63,6 +64,9 @@ public class playermovement : MonoBehaviour
             int healthValueNum = int.Parse(healthValue.GetComponent<UnityEngine.UI.Text>().text.ToString());
             healthValueNum -= 2;
             healthValue.GetComponent<UnityEngine.UI.Text>().text = healthValueNum.ToString();
+            GameObject effect = Instantiate(takedamageEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 0.4f);
+
         }
     }
 

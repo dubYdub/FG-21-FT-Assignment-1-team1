@@ -531,6 +531,10 @@ PrefabInstance:
       propertyPath: restartButton
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6752141772706400675, guid: 3e3a3f2d24ad50b4b993488c0563e73a, type: 3}
+      propertyPath: takedamageEffect
+      value: 
+      objectReference: {fileID: 2135285799782645315, guid: b2404ec7778220c4aa32d98328ee3b61, type: 3}
     - target: {fileID: 6752141772706400677, guid: 3e3a3f2d24ad50b4b993488c0563e73a, type: 3}
       propertyPath: m_Name
       value: ship_2
