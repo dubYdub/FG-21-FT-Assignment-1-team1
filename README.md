@@ -33,9 +33,9 @@
 
 ## Final goals
 
-- Balance the game
-- Add the animation of enemy's death (big bullet explosion)
-- Add sound when the player got hit
+- Balance the game :white_check_mark:
+- Add the animation of enemy's death (big bullet explosion) :white_check_mark:
+- Add sound when the player got hit :white_check_mark:
 - The freedom of backing to main page at any time point
 - Naming convention.
 
@@ -44,8 +44,10 @@
 ## Resources
 
 ### Asset
-balabala
+
+
+
+
 
 ### Audio
-balabala
 

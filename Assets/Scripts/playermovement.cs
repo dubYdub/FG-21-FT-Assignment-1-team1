@@ -44,6 +44,11 @@ public class playermovement : MonoBehaviour
             
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("StartScene");
+        }
+
     }
     void FixedUpdate()
     {

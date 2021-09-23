@@ -8,7 +8,8 @@ public class StartPageScene : MonoBehaviour
 
     public void PlayScene()
     {
-        SceneManager.LoadScene("level_1");
+        
+        SceneManager.LoadScene("level_"+LevelMsg.currentLevel.ToString());
     }
 
     public void TeamScene()
