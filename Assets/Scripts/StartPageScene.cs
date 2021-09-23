@@ -22,4 +22,9 @@ public class StartPageScene : MonoBehaviour
         SceneManager.LoadScene("RuleScene");
     }
 
+    public void Escape()
+    {
+        Application.Quit();
+    }
+
 }

@@ -8023,7 +8023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd5aa12785414b64eb904c72f50d78eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxKilledNumber: 20
+  maxKilledNumber: 1
 --- !u!114 &2105765253
 MonoBehaviour:
   m_ObjectHideFlags: 0
