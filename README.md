@@ -39,6 +39,25 @@
 - The freedom of backing to main page at any time point
 - Naming convention.
 
+
+## Feedback from QA process
+
+### Bugs
+1.Level 1 still working while killed number > 25 (after several full gameplay)
+
+### Suggestions
+1. Level 2 too easy
+2. Level 3 too easy
+3. More dynamic elements in level
+4. Clear effect when player got hit
+5. Particle effects for UI icons
+6. Make improvement to stupid enemy
+7. Level 1 too boring
+8. Random spwan point
+9. Shouldn't have particle effect when player is not moving.
+10. Mouse arrow shouldn't approach player
+11. Mouse should be locked in the same screen
+
 <br>
 
 ## Resources
