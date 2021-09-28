@@ -31,7 +31,7 @@ public class enemyspawner : MonoBehaviour
 
             GameObject player = GameObject.Find("ship_2");
            
-            randX = Random.Range (20f, 20f);
+            randX = Random.Range (-20f, 20f);
             wheretospawn = new Vector2(randX, transform.position.y);
 
             float seed = Random.Range(0f, 1.0f);
