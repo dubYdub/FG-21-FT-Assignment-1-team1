@@ -8338,6 +8338,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy-boss
       objectReference: {fileID: 0}
+    - target: {fileID: 8122450195727898840, guid: f6f00c1b66499ad4ea9e6acdbca3dcec, type: 3}
+      propertyPath: m_Mass
+      value: 1000000
+      objectReference: {fileID: 0}
     - target: {fileID: 8122450195727898841, guid: f6f00c1b66499ad4ea9e6acdbca3dcec, type: 3}
       propertyPath: m_Size.x
       value: 1.0433998
