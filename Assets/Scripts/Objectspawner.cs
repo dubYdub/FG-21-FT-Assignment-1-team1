@@ -19,6 +19,7 @@ public class Objectspawner : MonoBehaviour
         {
             
             GameObject effect = Instantiate(itemtospawn, transform.position, Quaternion.identity);
+            timer = 1000000000;
         }
 
     }

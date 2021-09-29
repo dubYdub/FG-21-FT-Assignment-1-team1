@@ -14,6 +14,7 @@ public class playermovement : MonoBehaviour
     public GameObject takedamageEffect;
     public GameObject heartIcon;
     public GameObject particleEffect;
+    public float shiftValue;
     public int heartShakingTime = 0;
 
     Vector2 movement;
@@ -86,7 +87,7 @@ public class playermovement : MonoBehaviour
 
         {
             GameObject killLogo = GameObject.Find("KillAccontLogo");
-            float x = killLogo.transform.position.x - 3.5f;
+            float x = killLogo.transform.position.x - shiftValue;
             float y = killLogo.transform.position.y;
             float z = killLogo.transform.position.z;
             heartIcon.transform.position = new Vector3(x, y, z);
@@ -127,7 +128,7 @@ public class playermovement : MonoBehaviour
     {
         GameObject healthValue = GameObject.Find("HealthValue");
         int healthValueNum = int.Parse(healthValue.GetComponent<UnityEngine.UI.Text>().text.ToString());
-        heartShakingTime = 80;
+        heartShakingTime = 40;
         healthValueNum -= 2;
         healthValue.GetComponent<UnityEngine.UI.Text>().text = healthValueNum.ToString();
     }
