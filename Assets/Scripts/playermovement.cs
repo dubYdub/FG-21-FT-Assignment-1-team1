@@ -75,7 +75,7 @@ public class playermovement : MonoBehaviour
 
         {
             GameObject killLogo = GameObject.Find("KillAccontLogo");
-            float x = killLogo.transform.position.x - 2.5f;
+            float x = killLogo.transform.position.x - 3.5f;
             float y = killLogo.transform.position.y;
             float z = killLogo.transform.position.z;
             heartIcon.transform.position = new Vector3(x, y, z);

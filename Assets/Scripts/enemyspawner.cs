@@ -14,6 +14,7 @@ public class enemyspawner : MonoBehaviour
     public int enemyNumber = 0;
     public int maxEnemyNumber = 4;
     public float shootingEnemyratio = 0f;
+    public float waittimer = 5f;
 
 
 
@@ -25,6 +26,11 @@ public class enemyspawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (waittimer >= 0)
+        {
+            waittimer = waittimer - Time.deltaTime;
+            return;
+        }
         if (Time.time > nextSpawn && enemyNumber < maxEnemyNumber)
         {
             nextSpawn = Time.time + spawnRate;
