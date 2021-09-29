@@ -163,6 +163,7 @@ MonoBehaviour:
   enemyHealth: 0
   maxHealth: 7
   hitEffect: {fileID: 8463924749333173870, guid: c264a0a89154dae45b8837f1a890ef1b, type: 3}
+  spawneffect: {fileID: 3587151152903947910, guid: a734a705772c9f4409fa90b9c4d4b1b2, type: 3}
 --- !u!95 &4111526128581972448
 Animator:
   serializedVersion: 3

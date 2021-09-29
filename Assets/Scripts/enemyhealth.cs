@@ -12,10 +12,16 @@ public class enemyhealth : MonoBehaviour
     public float maxHealth = 5;
     private Image healthBar;
     public GameObject hitEffect;
+    public GameObject spawneffect;
 
     void Start()
     {
         enemyHealth = maxHealth;
+        if (enemyHealth == maxHealth)
+        {
+            GameObject effect = Instantiate(spawneffect, transform.position, Quaternion.identity);
+            Destroy(effect, 0.6f);
+        }
     }
 
     public void TakeHit(float damage)
