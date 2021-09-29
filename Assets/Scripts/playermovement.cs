@@ -46,6 +46,17 @@ public class playermovement : MonoBehaviour
 
         mousePos = playercam.ScreenToWorldPoint(Input.mousePosition);
 
+        float distance = Vector2.Distance(mousePos,rb.position);
+        if(distance > 1.8f)
+        {
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.visible = false;
+        }
+
+
         healthValue = int.Parse(GameObject.Find("HealthValue").GetComponent<UnityEngine.UI.Text>().text);
         attackValue = int.Parse(GameObject.Find("AttackValue").GetComponent<UnityEngine.UI.Text>().text);
         killedValue = int.Parse(GameObject.Find("KilledAccountValue").GetComponent<UnityEngine.UI.Text>().text);
