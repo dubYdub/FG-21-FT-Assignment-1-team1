@@ -102,7 +102,7 @@ public class playermovement : MonoBehaviour
             HealthLossAnima();
             // Hit effect for player
             GameObject effect = Instantiate(takedamageEffect, transform.position, Quaternion.identity);
-            Destroy(effect, 0.4f);
+            Destroy(effect, 0.8f);
 
         }
     }
