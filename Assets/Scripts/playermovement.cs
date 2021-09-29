@@ -82,6 +82,11 @@ public class playermovement : MonoBehaviour
             GameObject.Find("HealthValue").GetComponent<UnityEngine.UI.Text>().color = Color.white;
         }
 
+        if (Input.GetKey(KeyCode.Space))
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+
     }
     void FixedUpdate()
     {
