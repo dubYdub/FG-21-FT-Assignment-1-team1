@@ -12,6 +12,9 @@ public class playermovement : MonoBehaviour
     public Camera playercam;
     public GameObject gameOverText, restartButton;
     public GameObject takedamageEffect;
+    public GameObject heartIcon;
+    public GameObject particleEffect;
+    public int heartShakingTime = 0;
 
     Vector2 movement;
     Vector2 mousePos;
@@ -22,8 +25,8 @@ public class playermovement : MonoBehaviour
 
     private void Start()
     {
-        //gameOverText.SetActive(false);
-        //restartButton.SetActive(false);
+        heartIcon = GameObject.Find("HealthLogo");
+        particleEffect = GameObject.Find("Particle_ship_rocket");
     }
 
     // Update is called once per frame
@@ -31,6 +34,15 @@ public class playermovement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        if (movement.x == 0 && movement.y == 0)
+        {
+            particleEffect.active = false;
+        } else
+        {
+            particleEffect.active = true;
+        }
+
 
         mousePos = playercam.ScreenToWorldPoint(Input.mousePosition);
 
@@ -49,6 +61,27 @@ public class playermovement : MonoBehaviour
             SceneManager.LoadScene("StartScene");
         }
 
+        if (heartShakingTime > 0)
+        {
+            float x = heartIcon.transform.position.x * Random.Range(.98f, 1.02f);
+            float y = heartIcon.transform.position.y * Random.Range(.98f, 1.02f);
+            float z = heartIcon.transform.position.z;
+
+            heartIcon.transform.position = new Vector3(x, y, z);
+            heartShakingTime --;
+            GameObject.Find("HealthValue").GetComponent<UnityEngine.UI.Text>().color = Color.red;
+
+        } else
+
+        {
+            GameObject killLogo = GameObject.Find("KillAccontLogo");
+            float x = killLogo.transform.position.x - 2.5f;
+            float y = killLogo.transform.position.y;
+            float z = killLogo.transform.position.z;
+            heartIcon.transform.position = new Vector3(x, y, z);
+            GameObject.Find("HealthValue").GetComponent<UnityEngine.UI.Text>().color = Color.white;
+        }
+
     }
     void FixedUpdate()
     {
@@ -65,14 +98,22 @@ public class playermovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "bullet" )
         {
-            GameObject healthValue = GameObject.Find("HealthValue");
-            int healthValueNum = int.Parse(healthValue.GetComponent<UnityEngine.UI.Text>().text.ToString());
-            healthValueNum -= 2;
-            healthValue.GetComponent<UnityEngine.UI.Text>().text = healthValueNum.ToString();
+            // health loss animation
+            HealthLossAnima();
+            // Hit effect for player
             GameObject effect = Instantiate(takedamageEffect, transform.position, Quaternion.identity);
             Destroy(effect, 0.4f);
 
         }
+    }
+
+    void HealthLossAnima()
+    {
+        GameObject healthValue = GameObject.Find("HealthValue");
+        int healthValueNum = int.Parse(healthValue.GetComponent<UnityEngine.UI.Text>().text.ToString());
+        heartShakingTime = 80;
+        healthValueNum -= 2;
+        healthValue.GetComponent<UnityEngine.UI.Text>().text = healthValueNum.ToString();
     }
 
 }

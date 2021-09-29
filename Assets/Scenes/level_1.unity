@@ -6227,7 +6227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.84046817, g: 0.85425544, b: 0.9528302, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6388,7 +6388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.990566, g: 0.85506403, b: 0.90156543, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6764,7 +6764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.84046817, g: 0.85425544, b: 0.9528302, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8535,6 +8535,10 @@ PrefabInstance:
     - target: {fileID: 6752141772706400675, guid: 3e3a3f2d24ad50b4b993488c0563e73a, type: 3}
       propertyPath: restartButton
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752141772706400675, guid: 3e3a3f2d24ad50b4b993488c0563e73a, type: 3}
+      propertyPath: heartShakingTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752141772706400675, guid: 3e3a3f2d24ad50b4b993488c0563e73a, type: 3}
       propertyPath: takedamageEffect
